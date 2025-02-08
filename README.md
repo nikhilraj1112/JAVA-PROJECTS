@@ -1,68 +1,45 @@
-# Car Rental System
+# Java Projects Repository
 
-## Overview
-This is a simple **Car Rental System** built using Java. It allows customers to rent and return cars while managing rental records efficiently.
+This repository contains two Java projects: one for a **Car Rental System** and another for a **To-Do List** application.
 
-## Features
-- **Add Cars**: The system maintains a list of available cars.
-- **Rent a Car**: Customers can rent a car for a specified number of days.
-- **Return a Car**: Customers can return rented cars.
-- **Rental Price Calculation**: The system calculates the total rental cost.
-- **Car Availability Management**: Prevents double-booking of cars.
-- **Customer Management**: Stores customer details and rental records.
+## Project 1: Car Rental System
 
-## Technologies Used
-- **Java**
-- **Object-Oriented Programming (OOP) principles**
-- **Scanner (for user input handling)**
+### Description
+This is a car rental system that allows customers to view available cars, rent a car, and return it. The system tracks the rental details such as car ID, rental duration, and customer information.
 
+### Features
+- Rent a car by selecting from available options.
+- Return a rented car and update the status.
+- Display total rental price based on rental duration.
+- Tracks car availability.
 
-## Class Structure
-### 1. `Car`
-- Represents a car with ID, brand, model, price, and availability status.
-- Methods: `rent()`, `returnCar()`, `calculatePrice()`
+### Technologies Used
+- Java 
+- ArrayList for managing cars, customers, and rentals.
 
-### 2. `Customer`
-- Represents a customer with ID and name.
+### Additional Notes
+- The system allows multiple customers to rent different cars.
+- Each car has a rental price per day, and the system calculates the total price based on the number of days rented.
 
-### 3. `Rental`
-- Represents a rental transaction with a car, customer, and rental duration.
+---
 
-### 4. `CarRentalSystem`
-- Manages the list of cars, customers, and rentals.
-- Handles car renting and returning.
-- Displays a user menu.
+## Project 2: To-Do List
 
-### 5. `Main`
-- Entry point of the program.
-- Initializes cars and starts the menu-driven system.
+### Description
+A simple To-Do List application to help manage tasks. Users can add, remove, and view their tasks, all within a simple console interface.
 
-## Example Usage
-```
-===== Car Rental System =====
-1. Rent a Car
-2. Return a Car
-3. Exit
-Enter your choice: 1
-Enter your name: John Doe
-Available Cars:
-C001 - Toyota Camry
-C002 - Honda Accord
+### Features
+- Add tasks to the list.
+- Remove tasks from the list by their task number.
+- View all tasks in the current list.
+- Exit the application.
 
-Enter the car ID you want to rent: C001
-Enter the number of days for rental: 3
+### Technologies Used
+- Java
+- ArrayList for managing tasks.
 
-== Rental Information ==
-Customer ID: CUS1
-Customer Name: Chris Evans
-Car: Toyota Camry
-Rental Days: 3
-Total Price: $180.00
+### Additional Notes
+- The user interacts with the program through a simple menu that provides options to add, remove, or view tasks.
+- It ensures a user-friendly interface by handling invalid inputs gracefully.
 
-Confirm rental (Y/N): Y
-Car rented successfully.
-```
-
-
-### 🚗 Happy Renting! 🚗
-
+---
